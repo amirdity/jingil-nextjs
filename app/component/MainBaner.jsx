@@ -4,7 +4,7 @@ import muge from "../../public/white-mugs.webp";
 import "../component/mainBaner.css";
 function MainBaner() {
   return (
-    <div className=" h-[500px] w-full flex  items-center justify-center text-center gap-x-10">
+    <div className=" flex h-[500px] items-center justify-center text-center gap-x-10 mx-5 rounded-xl banner ">
       <div className="flex">
         <Image src={muge} />
       </div>

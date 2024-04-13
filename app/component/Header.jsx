@@ -19,7 +19,7 @@ function Header() {
       <header className="bg-[#fcd8bb]  w-full h-20  justify-between align-center items-center gap-[20px] flex">
         <div className="flex items-center gap-x-5 m-5">
           {" "}
-          <FiAlignLeft />
+          <FiAlignLeft className="h-4" />
           <BsFillPersonFill />
           <BsCart3 /> <FiHeart />
           <VscAccount />
@@ -50,7 +50,7 @@ function Header() {
       <div className="h-[50px] bg-white gap-x-[1100px] hidden lg:flex">
         <div className="right-0">
           <a>
-            <p className="hover:text-blue-600">پشتیبانی : 09122026676</p>
+            <p className="hover:text-blue-600">پشتیبانی : 09122026676 </p>
           </a>
         </div>
         <div className="flex flex-row">
