@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import three from "../../public/s1.jpg";
-import two from "../../public/s2.jpg";
-import one from "../../public/s3.jpg";
+import three from "../../public/s4.jpg";
+import two from "../../public/s5.jpg";
+import one from "../../public/s6.jpg";
 
-function Slide() {
+function SlideT() {
   return (
-    <div className="flex flex-row justify-around">
+    <div className="flex flex-row justify-around mt-10">
       <div className="relative container">
-        <Image src={one} className=" rounded-3xl h-[200px]" />
+        <Image src={one} className=" rounded-3xl h-[250px]" />
         <div className="bottom-right absolute bg-purple-700 botton-[-5px]">
           تراول ماگ
         </div>
@@ -20,7 +20,7 @@ function Slide() {
         </div>
       </div>
       <div className="relative container">
-        <Image src={three} className=" rounded-3xl w-[430px] h-[250px]" />
+        <Image src={three} className=" rounded-3xl w-[430px] h-[200px]" />
         <div className="bottom-right absolute bg-purple-700 botton-[-5px]">
           تراول ماگ
         </div>
@@ -29,4 +29,4 @@ function Slide() {
   );
 }
 
-export default Slide;
+export default SlideT;

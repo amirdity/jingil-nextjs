@@ -11,10 +11,10 @@ import six from "../../public/6.jpg";
 import seven from "../../public/7.jpg";
 function Line() {
   return (
-    <div className="flex gap-x-5 justify-center align-middle items-center mt-10">
+    <div className="flex gap-x-5 justify-center align-middle items-center mt-10 mb-10">
       <motion.div
-        className=" gap-x-10 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        className=" gap-x-10 text-center rounded-xl"
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
         <Image src={one} />
@@ -23,7 +23,7 @@ function Line() {
       </motion.div>
       <motion.div
         className=" gap-x-6 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
         <Image src={two} />
@@ -32,7 +32,7 @@ function Line() {
       </motion.div>{" "}
       <motion.div
         className=" gap-x-6 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
         <Image src={three} />
@@ -41,7 +41,7 @@ function Line() {
       </motion.div>{" "}
       <motion.div
         className=" gap-x-6 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
         <Image src={fore} />
@@ -50,7 +50,7 @@ function Line() {
       </motion.div>{" "}
       <motion.div
         className=" gap-x-6 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
         <Image src={five} />
@@ -59,7 +59,7 @@ function Line() {
       </motion.div>{" "}
       <motion.div
         className=" gap-x-6 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
         <Image src={six} />
@@ -68,7 +68,7 @@ function Line() {
       </motion.div>{" "}
       <motion.div
         className=" gap-x-6 text-center"
-        whileHover={{ y: -7, scale: 1.5 }}
+        whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1.5 }}
       >
         <Image src={seven} />
