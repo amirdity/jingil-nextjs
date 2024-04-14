@@ -14,15 +14,16 @@ import { FaSlidersH } from "react-icons/fa";
 import { SiEmlakjet } from "react-icons/si";
 import { RiCupLine } from "react-icons/ri";
 function Header() {
+  const style = { fontSize: "2em" };
   return (
     <div className="">
       <header className="bg-[#fcd8bb]  w-full h-20  justify-between align-center items-center gap-[20px] flex">
         <div className="flex items-center gap-x-5 m-5">
           {" "}
-          <FiAlignLeft className="h-4" />
-          <BsFillPersonFill />
-          <BsCart3 /> <FiHeart />
-          <VscAccount />
+          <FiAlignLeft style={style} />
+          <BsFillPersonFill style={style} />
+          <BsCart3 style={style} /> <FiHeart style={style} />
+          <VscAccount style={style} />
         </div>
         <div className="flex rounded-full">
           <button className="bg-[#6205f7] p-3 rounded-l-full w-[40px] h-[40px]">
