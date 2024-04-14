@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Header from "./components/Header";
-import MainBaner from "./components/mainBaner";
-import Line from "./components/line";
+import MainBaner from "./components/MainBaner";
+import Line from "./components/Line";
 import Slide from "./components/Slide";
 import SlideT from "./components/SlideT";
-
+import GridBox from "./components/GridBox";
 export default function Home() {
   return (
     <main>
@@ -13,6 +13,7 @@ export default function Home() {
       <Line />
       <Slide />
       <SlideT />
+      <GridBox />
     </main>
   );
 }

@@ -48,7 +48,7 @@ function Header() {
             type="search"
             name="s"
             value=""
-            className="w-[500px] border placeholder-gray-600 rounded-r-full focus:placeholder-gray-500  align-middle justify-end flex right-0 float-right h-[40px] text-right "
+            className="w-full border placeholder-gray-600 rounded-r-full focus:placeholder-gray-500  align-middle justify-end flex right-0 float-right h-[40px] text-right shrink"
             placeholder=" . .. جست و جو در فروشگاه جینگیل پینگیل     "
             aria-label="Search"
           ></input>
