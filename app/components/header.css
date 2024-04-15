@@ -4,3 +4,11 @@ input::placeholder {
   color: red;
   display: flex;
 }
+
+.hide{
+  display: none !important
+}
+.show:hover + .hide {
+  display: block !important
+  
+}

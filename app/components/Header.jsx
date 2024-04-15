@@ -13,10 +13,12 @@ import { SiEmlakjet } from "react-icons/si";
 import { RiCupLine } from "react-icons/ri";
 import { AiTwotonePhone } from "react-icons/ai";
 import { BsArrowLeftRight } from "react-icons/bs";
+import { AiOutlineFrown } from "react-icons/ai";
 function Header() {
   const style = { fontSize: "27px" };
   const styleF = { fontSize: "22px" };
   const styleS = { fontSize: "16px" };
+  const styleI = { fontSize: "70px" };
   return (
     <div className="font-fa">
       <header className="bg-[#fcd8bb] w-full justify-between  items-center  hidden md:flex flex-row-reverse">
@@ -44,11 +46,18 @@ function Header() {
         </div>
         {/**  ICONS  */}
         <div className="flex items-center gap-x-[10px] m-5 shrink-0 ml-7">
-          <div className="relative flex">
-            <BsCart3 style={style} className=" hover:text-[#f59931]" />{" "}
+          <div className="relative flex show">
+            <BsCart3 style={style} className=" hover:text-[#f59931] " />{" "}
             <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
               0
             </p>
+            <div className="hide absolute w-[500px] h-[130px] bg-white top-[40px] rounded-3xl flex-col content-center text-center">
+              <p className="flex justify-center text-[#f59931]">
+                {" "}
+                <AiOutlineFrown style={styleI}  />{" "}
+              </p>
+              <p className=" text-center"> .هیچ محصولی در سبد خرید نیست</p>
+            </div>
           </div>
 
           <div className="relative flex">
@@ -81,23 +90,26 @@ function Header() {
               className="flex lg:hidden hover:text-[#f59931] "
             />{" "}
             <div className="relative flex">
-            <BsCart3 style={style} className=" hover:text-[#f59931]" />{" "}
-            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
-              0
-            </p>
-          </div>{" "}
-          <div className="relative flex">
-            <FiHeart style={style} className=" hover:text-[#f59931]" />{" "}
-            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
-              0
-            </p>
-          </div>
-          <div className="relative flex">
-            <BsArrowLeftRight style={style} className=" hover:text-[#f59931]" />{" "}
-            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
-              0
-            </p>
-          </div>
+              <BsCart3 style={style} className=" hover:text-[#f59931]" />{" "}
+              <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+                0
+              </p>
+            </div>{" "}
+            <div className="relative flex">
+              <FiHeart style={style} className=" hover:text-[#f59931]" />{" "}
+              <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+                0
+              </p>
+            </div>
+            <div className="relative flex">
+              <BsArrowLeftRight
+                style={style}
+                className=" hover:text-[#f59931]"
+              />{" "}
+              <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+                0
+              </p>
+            </div>
             <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
           </div>
         </div>
@@ -123,7 +135,7 @@ function Header() {
       <div className=" bg-white justify-between hidden lg:flex content-center">
         <div className="right-0 ">
           <a>
-            <p className="hover:text-blue-600 flex align-middle pt-3 font-medium">
+            <p className="hover:text-blue-600 flex align-middle pt-3 font-normal text-[#080452]">
               {" "}
               <AiTwotonePhone
                 style={styleS}
@@ -135,14 +147,17 @@ function Header() {
         </div>
         <div className="flex flex-row">
           <a className="hover:text-[#f59931] p-1 m-1 left-0">
-            <p className="flex p-1 font-medium">
-              ماگ
+            <p className="flex p-1 font-light">
+              <span className="pt-[3px]"> ماگ</span>
+
               <RiCupLine style={styleF} className="m-1" />
             </p>
           </a>
           <a className="hover:text-[#f59931] p-1 m-1 ">
-            <p className="flex p-1 font-medium">
-              صفحه اصلی <SiEmlakjet style={styleF} className="m-1" />
+            <p className="flex p-1 font-light">
+              <span className="pt-[3px]"> صفحه اصلی </span>
+
+              <SiEmlakjet style={styleF} className="m-1" />
             </p>
           </a>
         </div>
