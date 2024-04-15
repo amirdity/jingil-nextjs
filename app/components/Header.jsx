@@ -18,53 +18,112 @@ function Header() {
   const styleF = { fontSize: "22px" };
   const styleS = { fontSize: "16px" };
   return (
-    <div className="">
-      <header className="bg-[#fcd8bb]  w-full   justify-between align-center items-center gap-[20px] flex">
-        {/**  ICONS  */}
-        <div className="flex items-center gap-x-[10px] m-5">
-          {" "}
-          <FiAlignLeft
-            style={style}
-            className="flex lg:hidden hover:text-[#f59931] "
-          />{" "}
-          <BsCart3 style={style} className="hover:text-[#f59931] " />{" "}
-          <FiHeart style={style} className="hover:text-[#f59931] " />
-          <BsArrowLeftRight
-            style={style}
-            className="hover:text-[#f59931] "
-          />{" "}
-          <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+    <div className="font-fa">
+      <header className="bg-[#fcd8bb] w-full justify-between  items-center  hidden md:flex flex-row-reverse">
+        {/**  LOGO   */}
+        <div className="m-4 justify-end shrink-0 ">
+          <Image src={logo} className="h-[33px] w-[150px] cursor-pointer " />
         </div>
 
         {/**Search Bar */}
-        <div className="flex rounded-full ">
-          <button className="bg-[#f59931] p-3 rounded-l-full w-[40px] h-[40px]">
-            <FiSearch className="text-white " style={styleS} />
-          </button>
-          <button className="bg-white p-2 ">
-            <FaSlidersH className="" style={styleF} />
-          </button>
-
+        <div className="flex flex-row-reverse">
           <input
             type="search"
             name="s"
             value=""
-            className="w-full max-w-[300px] border placeholder-gray-600 rounded-r-full focus:placeholder-gray-500  align-middle justify-end flex right-0 float-right h-[40px] text-right shrink"
+            className="w-[45vw] placeholder-gray-600 rounded-r-full focus:placeholder-gray-500   justify-end flex h-[40px] text-right border-0 "
             placeholder=" . .. جست و جو در فروشگاه جینگیل پینگیل     "
             aria-label="Search"
           ></input>
+          <button className="bg-white p-2 border-0">
+            <FaSlidersH className="" style={styleF} />
+          </button>
+          <button className="bg-[#f59931] p-3 rounded-l-full w-[40px] h-[40px]">
+            <FiSearch className="text-white " style={styleS} />
+          </button>
         </div>
-        {/**  LOGO   */}
+        {/**  ICONS  */}
+        <div className="flex items-center gap-x-[10px] m-5 shrink-0 ml-7">
+          <div className="relative flex">
+            <BsCart3 style={style} className=" hover:text-[#f59931]" />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+              0
+            </p>
+          </div>
 
-        <div className="m-4 justify-end shrink-0">
-          <Image src={logo} className="h-[33px] w-[150px] cursor-pointer  " />
+          <div className="relative flex">
+            <FiHeart style={style} className=" hover:text-[#f59931]" />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+              0
+            </p>
+          </div>
+
+          <div className="relative flex">
+            <BsArrowLeftRight style={style} className=" hover:text-[#f59931]" />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+              0
+            </p>
+          </div>
+          <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+        </div>
+      </header>
+      {/**HEADER SCREEN SMALL */}
+      <header className="h-[127px] bg-[#fcd8bb] flex flex-col md:hidden">
+        {/**TOP */}
+        <div className="flex flex-row-reverse justify-between">
+          <div className="m-4 justify-end shrink-0 ">
+            <Image src={logo} className="h-[33px] w-[150px] cursor-pointer " />
+          </div>
+          <div className="flex items-center gap-x-[10px] m-5 shrink-0">
+            {" "}
+            <FiAlignLeft
+              style={style}
+              className="flex lg:hidden hover:text-[#f59931] "
+            />{" "}
+            <div className="relative flex">
+            <BsCart3 style={style} className=" hover:text-[#f59931]" />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+              0
+            </p>
+          </div>{" "}
+          <div className="relative flex">
+            <FiHeart style={style} className=" hover:text-[#f59931]" />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+              0
+            </p>
+          </div>
+          <div className="relative flex">
+            <BsArrowLeftRight style={style} className=" hover:text-[#f59931]" />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+              0
+            </p>
+          </div>
+            <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+          </div>
+        </div>
+        {/**DOWN PART (SEARCH) */}
+        <div className="flex flex-row-reverse ">
+          <input
+            type="search"
+            name="s"
+            value=""
+            className="w-screen border-0 placeholder-gray-600 rounded-r-full focus:placeholder-gray-500   justify-end flex right-0 float-right h-[40px] text-right shrink"
+            placeholder=" . .. جست و جو در فروشگاه جینگیل پینگیل     "
+            aria-label="Search"
+          ></input>
+          <button className="bg-white p-2 ">
+            <FaSlidersH className="" style={styleF} />
+          </button>
+          <button className="bg-[#f59931] p-3 rounded-l-full w-[40px] h-[40px]">
+            <FiSearch className="text-white " style={styleS} />
+          </button>
         </div>
       </header>
       {/**footer of the header */}
-      <div className="h-[50px] bg-white gap-x-[1100px] hidden lg:flex">
-        <div className="right-0">
+      <div className=" bg-white justify-between hidden lg:flex content-center">
+        <div className="right-0 ">
           <a>
-            <p className="hover:text-blue-600 flex align-middle pt-3">
+            <p className="hover:text-blue-600 flex align-middle pt-3 font-medium">
               {" "}
               <AiTwotonePhone
                 style={styleS}
@@ -75,15 +134,15 @@ function Header() {
           </a>
         </div>
         <div className="flex flex-row">
-          <a className="hover:text-blue-600 p-1 m-1 left-0">
-            <p className="flex p-1">
+          <a className="hover:text-[#f59931] p-1 m-1 left-0">
+            <p className="flex p-1 font-medium">
               ماگ
-              <RiCupLine style={styleS} className="m-1" />
+              <RiCupLine style={styleF} className="m-1" />
             </p>
           </a>
-          <a className="hover:text-blue-600 p-1 m-1 ">
-            <p className="flex p-1">
-              صفحه اصلی <SiEmlakjet style={styleS} className="m-1" />
+          <a className="hover:text-[#f59931] p-1 m-1 ">
+            <p className="flex p-1 font-medium">
+              صفحه اصلی <SiEmlakjet style={styleF} className="m-1" />
             </p>
           </a>
         </div>

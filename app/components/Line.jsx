@@ -11,9 +11,9 @@ import six from "../../public/6.jpg";
 import seven from "../../public/7.jpg";
 function Line() {
   return (
-    <div className="flex gap-x-5 justify-center align-middle items-center mt-10 mb-10">
+    <div className="flex gap-x-5 justify-end mt-10 mb-10 gap-4 flex-row-reverse font-fa">
       <motion.div
-        className=" gap-x-10 text-center rounded-xl"
+        className="  text-center rounded-xl"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
@@ -22,7 +22,7 @@ function Line() {
         <p> ⬅ نمایش </p>
       </motion.div>
       <motion.div
-        className=" gap-x-6 text-center"
+        className="  text-center"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
@@ -31,7 +31,7 @@ function Line() {
         <p> ⬅ نمایش </p>
       </motion.div>{" "}
       <motion.div
-        className=" gap-x-6 text-center"
+        className="  text-center"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
@@ -40,7 +40,7 @@ function Line() {
         <p> ⬅ نمایش </p>
       </motion.div>{" "}
       <motion.div
-        className=" gap-x-6 text-center"
+        className="  text-center"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
@@ -49,7 +49,7 @@ function Line() {
         <p> ⬅ نمایش </p>
       </motion.div>{" "}
       <motion.div
-        className=" gap-x-6 text-center"
+        className="  text-center"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
@@ -58,7 +58,7 @@ function Line() {
         <p> ⬅ نمایش </p>
       </motion.div>{" "}
       <motion.div
-        className=" gap-x-6 text-center"
+        className="  text-center"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1 }}
       >
@@ -67,7 +67,7 @@ function Line() {
         <p> ⬅ نمایش </p>
       </motion.div>{" "}
       <motion.div
-        className=" gap-x-6 text-center"
+        className="  text-center"
         whileHover={{ y: -7, scale: 1.2 }}
         whileTap={{ scale: 1.5 }}
       >

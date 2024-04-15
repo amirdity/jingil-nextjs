@@ -13,7 +13,7 @@ export default function Home() {
       <Line />
       <Slide />
       <SlideT />
-      <GridBox />
+     { /**<GridBox />*/}
     </main>
   );
 }
