@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import logo from "../../public/jingilpingil-logo.png";
-import { IconName } from "react-icons/vsc";
-import { VscAccount } from "react-icons/vsc";
 import "./header.css";
 import { BsCart3 } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -21,7 +19,8 @@ function Header() {
   const styleS = { fontSize: "16px" };
   return (
     <div className="">
-      <header className="bg-[#fcd8bb]  w-full h-[60px]  justify-between align-center items-center gap-[20px] flex">
+      <header className="bg-[#fcd8bb]  w-full   justify-between align-center items-center gap-[20px] flex">
+        {/**  ICONS  */}
         <div className="flex items-center gap-x-[10px] m-5">
           {" "}
           <FiAlignLeft
@@ -36,7 +35,9 @@ function Header() {
           />{" "}
           <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
         </div>
-        <div className="flex rounded-full">
+
+        {/**Search Bar */}
+        <div className="flex rounded-full ">
           <button className="bg-[#f59931] p-3 rounded-l-full w-[40px] h-[40px]">
             <FiSearch className="text-white " style={styleS} />
           </button>
@@ -48,11 +49,12 @@ function Header() {
             type="search"
             name="s"
             value=""
-            className="w-full border placeholder-gray-600 rounded-r-full focus:placeholder-gray-500  align-middle justify-end flex right-0 float-right h-[40px] text-right shrink"
+            className="w-full max-w-[300px] border placeholder-gray-600 rounded-r-full focus:placeholder-gray-500  align-middle justify-end flex right-0 float-right h-[40px] text-right shrink"
             placeholder=" . .. جست و جو در فروشگاه جینگیل پینگیل     "
             aria-label="Search"
           ></input>
         </div>
+        {/**  LOGO   */}
 
         <div className="m-4 justify-end shrink-0">
           <Image src={logo} className="h-[33px] w-[150px] cursor-pointer  " />
