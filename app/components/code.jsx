@@ -1,30 +1,65 @@
-{
-  /**footer of the header */
-}
-<div className=" bg-white gap-x-[1100px] hidden lg:flex">
-  <div className="right-0">
-    <a>
-      <p className="hover:text-blue-600 flex align-middle pt-3 font-semibold">
-        {" "}
-        <AiTwotonePhone
-          style={styleS}
-          className="hover:text-[#e11d48] mx-2"
-        />{" "}
-        پشتیبانی : 09122026676{" "}
-      </p>
-    </a>
-  </div>
-  <div className="flex flex-row">
-    <a className="hover:text-blue-600 p-1 m-1 left-0">
-      <p className="flex p-1 font-medium">
-        ماگ
-        <RiCupLine style={styleS} className="m-1" />
-      </p>
-    </a>
-    <a className="hover:text-blue-600 p-1 m-1 ">
-      <p className="flex p-1 font-medium">
-        صفحه اصلی <SiEmlakjet style={styleS} className="m-1" />
-      </p>
-    </a>
-  </div>
-</div>;
+<div className="flex gap-x-5 justify-end mt-10 mb-10 gap-4 flex-row-reverse font-fa">
+<motion.div
+  className="  text-center rounded-xl"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1 }}
+>
+  <Image src={one} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>
+<motion.div
+  className="  text-center"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1 }}
+>
+  <Image src={two} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>{" "}
+<motion.div
+  className="  text-center"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1 }}
+>
+  <Image src={three} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>{" "}
+<motion.div
+  className="  text-center"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1 }}
+>
+  <Image src={fore} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>{" "}
+<motion.div
+  className="  text-center"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1 }}
+>
+  <Image src={five} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>{" "}
+<motion.div
+  className="  text-center"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1 }}
+>
+  <Image src={six} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>{" "}
+<motion.div
+  className="  text-center"
+  whileHover={{ y: -7, scale: 1.2 }}
+  whileTap={{ scale: 1.5 }}
+>
+  <Image src={seven} />
+  <p>ماگ</p>
+  <p> ⬅ نمایش </p>
+</motion.div>
+</div>

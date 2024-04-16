@@ -51,13 +51,14 @@ function Header() {
             <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
               0
             </p>
-            <div className="hide absolute w-[500px] h-[130px] bg-white top-[40px] rounded-3xl flex-col content-center text-center">
-              <p className="flex justify-center text-[#f59931]">
-                {" "}
-                <AiOutlineFrown style={styleI}  />{" "}
-              </p>
-              <p className=" text-center"> .هیچ محصولی در سبد خرید نیست</p>
-            </div>
+          </div>
+          {/**HIDE CART */}
+          <div className="absolute hide  w-[500px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-center">
+            <p className="flex justify-center text-[#f59931]">
+              {" "}
+              <AiOutlineFrown style={styleI} />{" "}
+            </p>
+            <p className=" text-center"> .هیچ محصولی در سبد خرید نیست</p>
           </div>
 
           <div className="relative flex">
@@ -73,7 +74,21 @@ function Header() {
               0
             </p>
           </div>
-          <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+          <div className="relative flex show">
+            <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+          </div>
+          {/**HIDE CART */}
+          <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
+            <p className="flex flex-row-reverse">
+              <BsFillPersonFill className="mx-2" /> ورود / عضویت{" "}
+            </p>
+            <p className="flex flex-row-reverse">
+              <BsCart3 className="mx-2" /> سبد خرید{" "}
+            </p>
+            <p className="flex flex-row-reverse">
+              <BsArrowLeftRight className="mx-2" /> پرداخت{" "}
+            </p>
+          </div>
         </div>
       </header>
       {/**HEADER SCREEN SMALL */}
@@ -89,12 +104,20 @@ function Header() {
               style={style}
               className="flex lg:hidden hover:text-[#f59931] "
             />{" "}
-            <div className="relative flex">
+            <div className="relative flex show">
               <BsCart3 style={style} className=" hover:text-[#f59931]" />{" "}
               <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
                 0
               </p>
             </div>{" "}
+            {/**HIDE CART */}
+            <div className="absolute hide  w-[500px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-center">
+              <p className="flex justify-center text-[#f59931]">
+                {" "}
+                <AiOutlineFrown style={styleI} />{" "}
+              </p>
+              <p className=" text-center"> .هیچ محصولی در سبد خرید نیست</p>
+            </div>
             <div className="relative flex">
               <FiHeart style={style} className=" hover:text-[#f59931]" />{" "}
               <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
@@ -110,7 +133,21 @@ function Header() {
                 0
               </p>
             </div>
+            <div className="relative flex show">
             <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+          </div>
+          {/**HIDE CART */}
+          <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
+            <p className="flex flex-row-reverse">
+              <BsFillPersonFill className="mx-2" /> ورود / عضویت{" "}
+            </p>
+            <p className="flex flex-row-reverse">
+              <BsCart3 className="mx-2" /> سبد خرید{" "}
+            </p>
+            <p className="flex flex-row-reverse">
+              <BsArrowLeftRight className="mx-2" /> پرداخت{" "}
+            </p>
+          </div>
           </div>
         </div>
         {/**DOWN PART (SEARCH) */}
