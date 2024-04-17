@@ -19,6 +19,7 @@ function Header() {
   const styleF = { fontSize: "22px" };
   const styleS = { fontSize: "16px" };
   const styleI = { fontSize: "70px" };
+
   return (
     <div className="font-fa">
       <header className="bg-[#fcd8bb] w-full justify-between  items-center  hidden md:flex flex-row-reverse">
@@ -169,7 +170,7 @@ function Header() {
         </div>
       </header>
       {/**footer of the header */}
-      <div className=" bg-white justify-between hidden lg:flex content-center">
+      <div className=" bg-white justify-between hidden lg:flex content-center ">
         <div className="right-0 ">
           <a>
             <p className="hover:text-blue-600 flex align-middle pt-3 font-normal text-[#080452]">

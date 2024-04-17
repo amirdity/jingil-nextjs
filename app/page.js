@@ -11,9 +11,9 @@ export default function Home() {
       <Header />
       <MainBaner />
       <Line />
-      <Slide />
-      <SlideT />
-     { /**<GridBox />*/}
+     {/**  <Slide/>
+           <SlideT/> */}
+     {/** <GridBox/> */}
     </main>
   );
 }
