@@ -3,9 +3,9 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, History } from 'swiper/modules';
+import { Navigation, History } from "swiper/modules";
 
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 
 // Import Swiper styles
 import "swiper/css";
@@ -26,57 +26,154 @@ import six from "../../public/6.jpg";
 import seven from "../../public/7.jpg";
 function Line() {
   return (
-    <div className=" font-fa h-[40vh] my-10 px-10">
+    <div className=" font-fa h-[40vh] my-10  mx-10">
       <Swiper
-      style={{
-        '--swiper-navigation-color': '#666'
-        
-      }}
+        style={{
+          "--swiper-navigation-color": "#666",
+        }}
         slidesPerView={3}
         spaceBetween={10}
         navigation={true}
-        
         history={{
-          key: 'slide',
+          key: "slide",
         }}
-        
         breakpoints={{
           200: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
           750: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          900: {
             slidesPerView: 5,
             spaceBetween: 20,
           },
-          1024: {
+          1100: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+          1300: {
             slidesPerView: 7,
-            spaceBetween: 50,
+            spaceBetween: 20,
           },
         }}
         modules={[Navigation, History]}
         className="mySwiper "
       >
         <SwiperSlide>
-          <div className="flex flex-col ">
-            <motion.div
-              whileHover={{ y: -25, scale: 1.2 }}
-              whileTap={{ scale: 1 }} 
-              className="mb-10 rounded-3xl"
-            >
-              <Image src={seven} className="rounded-2xl" />
-            </motion.div>
+          <div className="flex flex-col">
+            <div className=" bg-[#ddccfe]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={seven} className="rounded-2xl" />
+              </motion.div>
+            </div>
 
             <p className="hover:text-[#f59931] "> ماگ استیل</p>
-            <p className="hover:text-[#f59931] "> نمایش ⬅</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col">
+            <div className=" bg-[#fecce1]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={six} className="rounded-2xl" />
+              </motion.div>
+            </div>
+
+            <p className="hover:text-[#f59931] "> ماگ استیل</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col">
+            <div className=" bg-[#ccdcfe]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={five} className="rounded-2xl" />
+              </motion.div>
+            </div>
+
+            <p className="hover:text-[#f59931] "> ماگ استیل</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col">
+            <div className=" bg-[#d5fecc]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={fore} className="rounded-2xl" />
+              </motion.div>
+            </div>
+
+            <p className="hover:text-[#f59931] "> ماگ استیل</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col">
+            <div className=" bg-[#ccfef6]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={three} className="rounded-2xl" />
+              </motion.div>
+            </div>
+
+            <p className="hover:text-[#f59931] "> ماگ استیل</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col">
+            <div className=" bg-[#fecccc]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={two} className="rounded-2xl" />
+              </motion.div>
+            </div>
+
+            <p className="hover:text-[#f59931] "> ماگ استیل</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col">
+            <div className=" bg-[#fff2d3]  rounded-full">
+              <motion.div
+                whileHover={{ y: -25, scale: 1.2 }}
+                whileTap={{ scale: 1 }}
+                className="p-5"
+              >
+                <Image src={one} className="rounded-2xl" />
+              </motion.div>
+            </div>
+
+            <p className="hover:text-[#f59931] "> ماگ استیل</p>
+            <p className="hover:text-[#f59931]  ">⬅ نمایش </p>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
