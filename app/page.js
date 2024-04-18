@@ -1,4 +1,3 @@
-
 import Header from "./components/Header/Header";
 import MainBaner from "./components/MainBaner/MainBaner";
 import Line from "./components/Slide/Slid";
@@ -7,21 +6,24 @@ import SlideT from "./components/Line/Line2";
 import GridBox from "./components/GridBox";
 import FooterOfHeader from "./components/Header/FooterOfHeader";
 // LOADING PAGE
-// import { useState, CSSProperties } from "react";
-// import ClipLoader from "react-spinners/ClipLoader";
 
+// import ClipLoader from "react-spinners/ClipLoader";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export default function Home() {
- 
   return (
     <main>
       <Header />
-      <FooterOfHeader/>
-      <MainBaner />
-      <Line />
-      <Slide/>
-      <SlideT/> 
-     {/** <GridBox/> */}
+      <FooterOfHeader />
+      <Suspense fallback={<p className="text-3xl">Loading ...</p>}>
+        <MainBaner />
+        </Suspense>
+        <Line />
+        <Slide />
+        <SlideT />
+        {/** <GridBox/> */}
+      
     </main>
   );
 }

@@ -24,9 +24,14 @@ import fore from "../../../public/4.jpg";
 import five from "../../../public/5.jpg";
 import six from "../../../public/6.jpg";
 import seven from "../../../public/7.jpg";
+
+import { Suspense } from "react";
+
+
 function Line() {
   return (
     <div className=" font-fa h-[40vh] my-10  mx-10">
+      <Suspense fallback={<p className="text-3xl">Loading ...</p>}>
       <Swiper
         style={{
           "--swiper-navigation-color": "#666",
@@ -175,6 +180,7 @@ function Line() {
           </div>
         </SwiperSlide>
       </Swiper>
+      </Suspense>
     </div>
   );
 }
