@@ -1,4 +1,5 @@
 .gridT{
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  
+  grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  grid-auto-flow: dense;
+  direction: rtl;
 }
