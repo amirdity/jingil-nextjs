@@ -11,7 +11,7 @@ function TopFooter() {
   return (
     <div className=" font-fa p-[10px] mx-5 bg-[#f11b1b] background flex flex-col  lg:flex-row-reverse justify-between rounded-t-3xl border-solid border-8 border-rose-300 mb-[-40px] z-50">
       {/* LOCK IMAGE */}
-      <div className="flex justify-end">
+      <div className="flex justify-end mb-4">
         <Image src={image} className="h-auto" />
       </div>
       {/* ADDRESS */}
@@ -28,7 +28,7 @@ function TopFooter() {
           09360936992</p>
       </div>
       {/* SOCIAL MEDIA */}
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center mb-5 z-50">
         <div className="social-div border-[3px] border-solid border-white p-1 rounded-xl">
        
         <p className="flex flex-row text-white">  <span  className="hidden show "> اینستگرام </span> <Image src={svginsta} className=" w-7 flex p-1"/> </p>
