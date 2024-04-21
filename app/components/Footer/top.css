@@ -1,7 +1,43 @@
-.background {
-  background-image: linear-gradient(
-    227deg,
-    var(--e-global-color-e8c1024) 65%,
-    var(--e-global-color-primary) 100%
-  );
+.social-div:hover .show {
+  display: flex;
+  animation-name: showing;
+  animation-duration: .5s;
+  transition: .5s ease;
+}
+.social-div:hover {
+  border-color: blue;
+}
+.show {
+  animation-name: reverse1;
+  transition: .5s ease;
+}
+@keyframes showing {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 14px;
+    opacity: 1;
+  }
+}
+
+@keyframes reverse1 {
+  0% {
+
+    font-size: 14px;
+    opacity: 1;
+    
+  }
+  100% {
+    font-size: 0px;
+    opacity: 0;
+  }
+}
+
+p::before {
+  content: " ";
+  animation-name: reverse1;
+  transition-timing-function: ease;
+  transition: 1s;
 }

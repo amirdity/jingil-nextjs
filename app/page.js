@@ -27,8 +27,8 @@ export default function Home() {
       <Slide />
       <SlideT />
       <GridBox />
-      <TopFooter/>
-      {/* <BottemFooter/> */}
+      <TopFooter />
+      <BottemFooter/>
     </main>
   );
 }
