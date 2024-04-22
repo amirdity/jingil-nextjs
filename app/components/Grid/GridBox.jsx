@@ -10,8 +10,8 @@ import './grid.css'
 function GridBox() {
   const style = { fontSize: "50px" };
   return (
-    <div className=" gridT gap-2 grid ">
-      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2  justify-end">
+    <div className="gridT gap-2 grid">
+      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2 justify-end">
         <div className="m-2">
           <p className="font-bold"> ارسال سریع</p>
           <p>امکان تحویل اکسپرس</p>
@@ -27,7 +27,7 @@ function GridBox() {
           />{" "}
         </motion.div>
       </div>
-      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2  justify-end">
+      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2 justify-end">
         <div className="m-2">
           <p className="font-bold"> قرغه کشی فصلی</p>
           <p>هر خرید 10 امتیاز</p>
@@ -43,7 +43,7 @@ function GridBox() {
           />{" "}
         </motion.div>
       </div>
-      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2  justify-end">
+      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2 justify-end">
         <div className="m-2">
           <p className="font-bold">ضمانت اصالت کالا</p>
           <p>اورجینال و پلمپ </p>
@@ -59,7 +59,7 @@ function GridBox() {
           />{" "}
         </motion.div>
       </div>
-      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2  mb-2 justify-end">
+      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2 justify-end">
         <div className="m-2">
           <p className="font-bold">پرداخت در محل</p>
           <p>توست کلیه کارت ها</p>
@@ -75,7 +75,7 @@ function GridBox() {
           />{" "}
         </motion.div>
       </div>
-      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2  justify-end">
+      <div className="flex-row-reverse flex hover:bg-[#f59931] rounded-2xl hover:text-white mx-2 mb-2 justify-end">
         <div className="m-2">
           <p className="font-bold">پشتیبانی 24 ساعته </p>
           <p>هفت روز هفته </p>

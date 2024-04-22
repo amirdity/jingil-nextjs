@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <div className="font-fa ">
-      <header className="bg-[#fcd8bb]  w-full justify-between  items-center  hidden md:flex flex-row-reverse ">
+      <header className="bg-[#fcd8bb] w-full justify-between items-center hidden md:flex flex-row-reverse">
         {/**  LOGO   */}
         <div className="m-4 justify-end shrink-0 ">
           <Image src={logo} className="h-[33px] w-[150px] cursor-pointer " />
@@ -48,8 +48,8 @@ function Header() {
         {/**  ICONS  */}
         <div className="flex items-center gap-x-[10px] m-5 shrink-0 ml-7">
           <div className="relative flex show">
-            <BsCart3 style={style} className=" hover:text-[#f59931] " />{" "}
-            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1 ">
+            <BsCart3 style={style} className="hover:text-[#f59931] " />{" "}
+            <p className="absolute rounded-full bg-[#f59931] top-[-7px] right-[-5px] w-[16px] h-[16px] font-normal text-[10px] content-center pl-1">
               0
             </p>
           </div>
@@ -75,8 +75,9 @@ function Header() {
               0
             </p>
           </div>
+
           <div className="relative flex show">
-            <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
+            <BsFillPersonFill style={style} className="hover:text-[#f59931]" />
           </div>
           {/**HIDE CART */}
           <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
@@ -135,20 +136,23 @@ function Header() {
               </p>
             </div>
             <div className="relative flex show">
-            <BsFillPersonFill style={style} className="hover:text-[#f59931] " />
-          </div>
-          {/**HIDE CART */}
-          <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
-            <p className="flex flex-row-reverse">
-              <BsFillPersonFill className="mx-2" /> ورود / عضویت{" "}
-            </p>
-            <p className="flex flex-row-reverse">
-              <BsCart3 className="mx-2" /> سبد خرید{" "}
-            </p>
-            <p className="flex flex-row-reverse">
-              <BsArrowLeftRight className="mx-2" /> پرداخت{" "}
-            </p>
-          </div>
+              <BsFillPersonFill
+                style={style}
+                className="hover:text-[#f59931] "
+              />
+            </div>
+            {/**HIDE CART */}
+            <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
+              <p className="flex flex-row-reverse">
+                <BsFillPersonFill className="mx-2" /> ورود / عضویت{" "}
+              </p>
+              <p className="flex flex-row-reverse">
+                <BsCart3 className="mx-2" /> سبد خرید{" "}
+              </p>
+              <p className="flex flex-row-reverse">
+                <BsArrowLeftRight className="mx-2" /> پرداخت{" "}
+              </p>
+            </div>
           </div>
         </div>
         {/**DOWN PART (SEARCH) */}
@@ -170,7 +174,6 @@ function Header() {
         </div>
       </header>
       {/**footer of the header */}
-      
     </div>
   );
 }

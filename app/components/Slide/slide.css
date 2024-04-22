@@ -1,8 +1,8 @@
 #app {
   height: 100%;
 }
-html,
-body {
+
+html, body {
   position: relative;
   height: 100%;
 }
@@ -23,7 +23,6 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  
   /* Center slide text vertically */
   display: flex;
   justify-content: center;

@@ -4,7 +4,7 @@ import image from "../../../public/enamad.png";
 function BottemFooter() {
   return (
     <div className=" bg-rose-200 -z-40">
-      <div className=" w-full  flex flex-col lg:flex-row-reverse justify-between align-top pt-10 text-end font-fa">
+      <div className="w-full flex flex-col lg:flex-row-reverse justify-between align-top pt-10 text-end font-fa">
         <div className="flex flex-col lg:flex-row-reverse justify-center">
           <div className="flex flex-col mx-20 my-10 ">
             <p className="text-base font-semibold">
