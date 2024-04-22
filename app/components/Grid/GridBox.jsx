@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { BsCollection } from "react-icons/bs";
 import { BsFastForward } from "react-icons/bs";
 import { BsExclamationTriangle } from "react-icons/bs";
-import './grid.css'
+import "./grid.css";
 function GridBox() {
   const style = { fontSize: "50px" };
   return (

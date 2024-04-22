@@ -10,12 +10,15 @@ import svgwhatsapp from "../../../public/SVG/whatsapp.svg";
 function TopFooter() {
   return (
     // XL EVERY THIING ROW
-    <div className=" font-fa p-[10px] mx-5 bg-[#f11b1b] background flex flex-col  md:flex-row-reverse rounded-t-3xl border-solid border-8 border-rose-300 mb-[-40px] z-50 ">
+    <div
+      style={{ position: "relative", zIndex: "1" }}
+      className=" font-fa p-[10px] mx-5 bg-[#bf0606] background flex flex-col  md:flex-row-reverse rounded-t-3xl border-solid border-8 border-rose-300 mb-[-40-px] z-[1000]"
+    >
       {/* LOCK IMAGE */}
       <div className="flex justify-end mb-4 lg:w-[150px] flex-none">
         <Image
           src={image}
-          className="h-auto max-h-[200px] w-auto min-h-[100px]"
+          className="h-auto max-h-[150px] w-auto min-h-[100px] my-5"
         />
       </div>
       {/* ADDRESS */}

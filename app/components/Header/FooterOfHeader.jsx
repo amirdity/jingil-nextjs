@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import "./header.css";
 import { BsCart3 } from "react-icons/bs";
@@ -20,36 +20,36 @@ function FooterOfHeader() {
   const styleI = { fontSize: "70px" };
   return (
     <div className=" bg-white justify-between hidden lg:flex content-center sticky top-0 font-fa z-40">
-        <div className="right-0 ">
-          <a>
-            <p className="hover:text-blue-600 flex align-middle pt-3 font-normal text-[#080452]">
-              {" "}
-              <AiTwotonePhone
-                style={styleS}
-                className="hover:text-[#e11d48] mx-2"
-              />{" "}
-              پشتیبانی : 09122026676{" "}
-            </p>
-          </a>
-        </div>
-        <div className="flex flex-row">
-          <a className="hover:text-[#f59931] p-1 m-1 left-0">
-            <p className="flex p-1 font-light">
-              <span className="pt-[3px]"> ماگ</span>
-
-              <RiCupLine style={styleF} className="m-1" />
-            </p>
-          </a>
-          <a className="hover:text-[#f59931] p-1 m-1 ">
-            <p className="flex p-1 font-light">
-              <span className="pt-[3px]"> صفحه اصلی </span>
-
-              <SiEmlakjet style={styleF} className="m-1" />
-            </p>
-          </a>
-        </div>
+      <div className="right-0 ">
+        <a>
+          <p className="hover:text-blue-600 flex align-middle pt-3 font-normal text-[#080452]">
+            {" "}
+            <AiTwotonePhone
+              style={styleS}
+              className="hover:text-[#e11d48] mx-2"
+            />{" "}
+            پشتیبانی : 09122026676{" "}
+          </p>
+        </a>
       </div>
-  )
+      <div className="flex flex-row">
+        <a className="hover:text-[#f59931] p-1 m-1 left-0">
+          <p className="flex p-1 font-light">
+            <span className="pt-[3px]"> ماگ</span>
+
+            <RiCupLine style={styleF} className="m-1" />
+          </p>
+        </a>
+        <a className="hover:text-[#f59931] p-1 m-1 ">
+          <p className="flex p-1 font-light">
+            <span className="pt-[3px]"> صفحه اصلی </span>
+
+            <SiEmlakjet style={styleF} className="m-1" />
+          </p>
+        </a>
+      </div>
+    </div>
+  );
 }
 
-export default FooterOfHeader
+export default FooterOfHeader;

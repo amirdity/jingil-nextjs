@@ -5,22 +5,20 @@ input::placeholder {
   display: flex;
 }
 
-.hide{
+.hide {
   display: none;
   z-index: 100;
   padding-top: 15px;
 }
-.hide:hover{
+.hide:hover {
   display: flex;
 }
 .show:hover + .hide {
-  
   animation-name: my-animation;
   animation-duration: 0.5s;
   animation-direction: alternate;
   animation-timing-function: linear;
   display: flex;
-  
 }
 
 @keyframes my-animation {
@@ -30,6 +28,5 @@ input::placeholder {
   }
   to {
     opacity: 1;
-    
   }
 }

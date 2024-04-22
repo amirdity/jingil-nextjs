@@ -54,7 +54,7 @@ function Header() {
             </p>
           </div>
           {/**HIDE CART */}
-          <div className="absolute hide  w-[500px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-center">
+          <div className="absolute hide  w-[500px] h-[130px] bg-white top-[45px] rounded-3xl flex-col content-center text-center">
             <p className="flex justify-center text-[#f59931]">
               {" "}
               <AiOutlineFrown style={styleI} />{" "}
@@ -80,14 +80,14 @@ function Header() {
             <BsFillPersonFill style={style} className="hover:text-[#f59931]" />
           </div>
           {/**HIDE CART */}
-          <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
-            <p className="flex flex-row-reverse">
+          <div className="absolute hide  w-[250px] h-[130px] bg-white top-[45px] rounded-3xl flex-col content-center text-right pr-6">
+            <p className="flex flex-row-reverse my-2">
               <BsFillPersonFill className="mx-2" /> ورود / عضویت{" "}
             </p>
-            <p className="flex flex-row-reverse">
+            <p className="flex flex-row-reverse my-2">
               <BsCart3 className="mx-2" /> سبد خرید{" "}
             </p>
-            <p className="flex flex-row-reverse">
+            <p className="flex flex-row-reverse my-2">
               <BsArrowLeftRight className="mx-2" /> پرداخت{" "}
             </p>
           </div>
@@ -113,7 +113,7 @@ function Header() {
               </p>
             </div>{" "}
             {/**HIDE CART */}
-            <div className="absolute hide  w-[500px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-center">
+            <div className="absolute hide  w-[500px] h-[130px] bg-white top-[45px] rounded-3xl flex-col content-center text-center">
               <p className="flex justify-center text-[#f59931]">
                 {" "}
                 <AiOutlineFrown style={styleI} />{" "}
@@ -142,14 +142,14 @@ function Header() {
               />
             </div>
             {/**HIDE CART */}
-            <div className="absolute hide  w-[250px] h-[130px] bg-white top-[50px] rounded-3xl flex-col content-center text-right pr-6">
-              <p className="flex flex-row-reverse">
+            <div className="absolute hide  w-[250px] h-[130px] bg-white top-[45px] rounded-3xl flex-col content-center text-right pr-6">
+              <p className="flex flex-row-reverse my-2">
                 <BsFillPersonFill className="mx-2" /> ورود / عضویت{" "}
               </p>
-              <p className="flex flex-row-reverse">
+              <p className="flex flex-row-reverse my-2">
                 <BsCart3 className="mx-2" /> سبد خرید{" "}
               </p>
-              <p className="flex flex-row-reverse">
+              <p className="flex flex-row-reverse my-2">
                 <BsArrowLeftRight className="mx-2" /> پرداخت{" "}
               </p>
             </div>
@@ -173,7 +173,6 @@ function Header() {
           </button>
         </div>
       </header>
-      {/**footer of the header */}
     </div>
   );
 }

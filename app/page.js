@@ -6,8 +6,8 @@ import Slide from "./components/Line/Line1";
 import SlideT from "./components/Line/Line2";
 import GridBox from "./components/Grid/GridBox";
 import FooterOfHeader from "./components/Header/FooterOfHeader";
-import TopFooter from './components/Footer/TopFooter'
-import BottemFooter from './components/Footer/BottemFooter'
+import TopFooter from "./components/Footer/TopFooter";
+import BottemFooter from "./components/Footer/BottemFooter";
 import Loading from "./loading";
 import { useEffect, useState } from "react";
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       <SlideT />
       <GridBox />
       <TopFooter />
-      <BottemFooter/>
+      <BottemFooter />
     </main>
   );
 }
