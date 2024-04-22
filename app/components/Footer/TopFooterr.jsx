@@ -7,7 +7,7 @@ import svgmail from "../../../public/SVG/email.svg";
 import svgphone from "../../../public/SVG/phone.svg";
 import svginsta from "../../../public/SVG/insta.svg";
 import svgwhatsapp from "../../../public/SVG/whatsapp.svg";
-function TopFooter() {
+function TopFooterr() {
   return (
     // XL EVERY THIING ROW
     <div className=" font-fa p-[10px] mx-5 bg-[#f11b1b] background flex flex-col  md:flex-row-reverse justify-between rounded-t-3xl border-solid border-8 border-rose-300 mb-[-40px] z-50 ">
@@ -71,4 +71,4 @@ function TopFooter() {
   );
 }
 
-export default TopFooter;
+export default TopFooterr;

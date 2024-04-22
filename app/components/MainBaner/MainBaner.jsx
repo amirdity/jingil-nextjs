@@ -10,7 +10,7 @@ function MainBaner() {
         <Image src={muge} className=""/>
       </div>
       {/**TEXT */}
-      <div className="lg:text-right mx-[100px] ">
+      <div className="lg:text-right mx-[100px]">
         <p className=" text-[18px] text-white m-2">ماگ</p>
         <p className="text-3xl text-white text-[26px] m-2">جینگیل پینگیل</p>
         <p className="text-3xl text-[15px] text-white m-2">
