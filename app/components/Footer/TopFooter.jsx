@@ -10,16 +10,16 @@ import svgwhatsapp from "../../../public/SVG/whatsapp.svg";
 function TopFooter() {
   return (
     // XL EVERY THIING ROW
-    <div className=" font-fa p-[10px] mx-5 bg-[#f11b1b] background flex flex-col  md:flex-row-reverse justify-between rounded-t-3xl border-solid border-8 border-rose-300 mb-[-40px] z-50 ">
+    <div className=" font-fa p-[10px] mx-5 bg-[#f11b1b] background flex flex-col  md:flex-row-reverse rounded-t-3xl border-solid border-8 border-rose-300 mb-[-40px] z-50 ">
       {/* LOCK IMAGE */}
-      <div className="flex justify-end mb-4 lg:w-[150px]">
+      <div className="flex justify-end mb-4 lg:w-[150px] flex-none">
         <Image
           src={image}
           className="h-auto max-h-[200px] w-auto min-h-[100px]"
         />
       </div>
       {/* ADDRESS */}
-      <div className="text-white flex flex-col xl:flex-row-reverse lg:mt-[60px]">
+      <div className="text-white flex flex-col xl:flex-row-reverse align-middle lg:mt-[55px] flex-1">
         {/* TITLE */}
         <div className="lg:flex-row flex justify-end flex-col">
           <p className="font-semibold text-lg text-end text-[#f1f1f1] my-1 pr-2 ">
@@ -51,7 +51,7 @@ function TopFooter() {
         </div>
       </div>
       {/* SOCIAL MEDIA */}
-      <div className="flex flex-row items-center justify-center mb-10 z-50 min-w-[150px]">
+      <div className="flex flex-row items-center justify-center mb-10 z-50 min-w-[150px] left-0 flex-none">
         <div className="social-div border-[3px] border-solid border-white p-1 rounded-xl m-1">
           <p className="flex flex-row text-white">
             {" "}
