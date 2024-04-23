@@ -8,6 +8,7 @@ import GridBox from "./components/Grid/GridBox";
 import FooterOfHeader from "./components/Header/FooterOfHeader";
 import TopFooter from "./components/Footer/TopFooter";
 import BottemFooter from "./components/Footer/BottemFooter";
+import AboutBox from './components/Box/AboutBox'
 import Loading from "./loading";
 import { useEffect, useState } from "react";
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <Slide />
       <SlideT />
       <GridBox />
+      <AboutBox/>
       <TopFooter />
       <BottemFooter />
     </main>
