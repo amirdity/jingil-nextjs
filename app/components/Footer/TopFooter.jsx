@@ -54,7 +54,7 @@ function TopFooter() {
         </div>
       </div>
       {/* SOCIAL MEDIA */}
-      <div className="flex flex-row items-center justify-center mb-10 z-50 min-w-[150px] left-0 flex-none">
+      <div className="flex flex-row items-center justify-center mb-5 z-50 min-w-[150px] left-0 flex-none">
         <div className="social-div border-[3px] border-solid border-white p-1 rounded-xl m-1">
           <p className="flex flex-row text-white">
             {" "}
