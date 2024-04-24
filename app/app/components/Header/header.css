@@ -1,0 +1,32 @@
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: red;
+  display: flex;
+}
+
+.hide {
+  display: none;
+  z-index: 100;
+  padding-top: 15px;
+}
+.hide:hover {
+  display: flex;
+}
+.show:hover + .hide {
+  animation-name: my-animation;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  display: flex;
+}
+
+@keyframes my-animation {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 1;
+  }
+}
